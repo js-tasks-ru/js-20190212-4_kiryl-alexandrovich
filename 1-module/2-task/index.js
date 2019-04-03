@@ -1,18 +1,11 @@
 'use strict';
 
-/**
- * Эту функцию трогать не нужно
- */
 function print (text) {
     alert(text);
 }
 
-/**
- * Эту функцию нужно поменять так,
- * чтобы функция sayHello работала корректно
- */
 function isValid (name) {
-    if(name === '' || name.search(/\s/) > -1 || name.length < 4){
+    if(name === null || name.search(/\s/) > -1 || name.length < 4 ){
         return false;
       }
     return true;
